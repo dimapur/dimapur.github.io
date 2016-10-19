@@ -1,0 +1,390 @@
+/*
+ * @file
+ * global.styles
+ *
+ * Styles you add here will load for all device sizes, they are "global", as
+ * opposed to "responsive" styles, which only load for a given breakpoint (media
+ * query) that you set in theme settings. See the README for more details.
+ *
+ *
+ * How to use this file:
+ * --------------------
+ *
+ * There are many empty selectors and some basic styles to act as a guide.
+ * Nothing is set in stone and you can change anything - even delete all of it
+ * and start with your own clean slate.
+ *
+ * See global.base also which includes normalize.css and some additional
+ * See global.base also which includes normalize.css and some additional
+ * helper classes and base styles.
+ */
+
+/* =============================================================================
+ *   Base
+ * ========================================================================== */
+
+/*
+ * To preserve theme settings never apply font properties to the HTML element.
+ * This is critically important if you are using the Responsive JavaScript
+ * feature as this relies on being able to set a pseudo font family on the HTML
+ * element. If you need to set default font properties of any kind use the BODY
+ * element as these can be overridden using font theme settings.
+ */
+ 
+ /*Fixing 2015/10/08*/
+ 
+  *:after, *:before { 
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+.imag {
+	width:300px;
+	height:171px;
+	max-width:100%;
+	vertical-align:middle;
+	border:0;
+	-ms-interpolation-mode:bicubic;
+}
+
+.wrapper:before, .wrapper:after {
+	display:table;
+	line-height:0;
+}
+.wrapper:after {
+	clear:both;
+}
+.wrapper {
+	max-width:1180px;
+	display:block;
+	margin:0 auto!important;
+}
+
+
+body {
+	font-family: 'open_sansregular';
+}
+
+
+
+#home #mini-panel-home_main_content .panel-col-first {
+	width: 39%;
+	float:left;
+	margin: 30px 0 0 0px;
+}
+.panel-3col .panel-col-first .inside {
+	margin:0px;
+}
+#home #mini-panel-home_main_content .panel-col-first .item-list-q {
+    clear: both;
+    display: block;
+    margin-top: -2px;
+}
+#home #mini-panel-home_main_content .panel-col-first .quicktabs-wrapper {
+	clear: both;
+	margin: 0 0 25px 0;
+	min-height: 306px;
+	position: relative;
+}
+#home #mini-panel-home_main_content .panel-col-first .quicktabs-wrapper .quicktabs_main {
+	background: #f9f9f9;
+    border: 1px solid #e3e3e3;
+    clear: both;
+    height: 272px;
+}
+#home #mini-panel-home_main_content .panel-col-first .item-list-q ul li a {
+    background: #eee none repeat scroll 0 0;
+	border:1px solid #e3e3e3;
+	border-bottom:none;
+    cursor: pointer;
+    font-family: "open_sansregular";
+    font-size: 1.3em;
+    font-weight: 600;
+    left: 1px;
+    line-height: 32px;
+    margin-left: -1px;
+    padding: 7px 10px;
+    position: relative;
+	/*background: none repeat scroll 0 0 #eee;
+	border: 1px solid #e3e3e3;
+	cursor: pointer;
+	font-family: "open_sansregular";
+	font-size: 1.3em;
+	font-weight: 600;
+	left: 1px;
+	margin-left: -1px;
+	padding: 7px 10px;
+	position: relative;
+	position: relative;*/
+}
+#home #mini-panel-home_main_content .panel-col-first .item-list-q ul li.active a {
+	background: rgb(142, 141, 141) url("../images/TABARROW.png") no-repeat scroll 21px 26px;
+    border-bottom: none;
+    color: #fff;
+    cursor: default;
+    z-index: 2;
+	line-height:normal;
+	/*background: url("../images/TABARROW.png") no-repeat scroll 21px 26px rgb(142, 141, 141);
+	border-bottom: 1px solid white;
+	color: #fff;
+	cursor: default;
+	z-index: 2;*/
+}
+#home .panel-col-first .view-content .item-list ul {
+	list-style-type:none;
+}
+#home .panel-col-first .view-content ul li {
+	background: url("../images/arrow.jpg") no-repeat scroll left 4px rgba(0, 0, 0, 0);
+	display: block;
+	line-height: 19px;
+	margin: 0 0 10px;
+	padding: 0 0 0 19px;
+	width: 100%;
+	font-size: 1.3em;
+	box-sizing: border-box;
+}
+/*tabbing css starts*/
+#home .panel-col-first .pane-quicktabs-none {
+	position: relative;
+	min-height: 290px;
+	clear: both;/*margin: 25px 0;*/
+}
+#home .panel-col-first .panel-pane .tab {
+	float: left;
+	font-size: 1.3em;
+}
+#home .panel-col-first .panel-pane .tab label {
+	background: none repeat scroll 0 0 #eee;
+	border: 1px solid #e3e3e3;
+	left: 1px;
+	margin-left: -1px;
+	padding: 6px 10px;
+	position: relative;
+	font-family: "open_sansregular";
+	font-weight:600;
+	cursor: pointer;
+	color:#000;
+}
+#home .panel-col-first .view-content {
+	position: absolute;
+	top: 32px;
+	left: 0;
+	/*background: rgb(249,249,249);*/
+	right: 0;
+	bottom: 0;
+	padding: 20px 10px;
+	border:none;
+	z-index: 9;
+}
+#home .panel-col-first #quicktabs-container-_none_ #quicktabs-tabpage-_none_-0 .view-content .item-list {
+	height: 232px;
+    overflow: auto;
+    padding: 0 10px 0 0;
+}
+/*tabbing css ends*/
+/*accordian css starts*/
+#home #mini-panel-most_view_for_home {
+	width: 100%; /*margin: 20px 0 0;*/
+}
+#home .panel-col .inside .pane-metadata h2 {
+	background: none repeat scroll 0 0 #e5e5e5;
+	border-bottom: 1px solid #cfcfcf;
+	color: #212121;
+	cursor: pointer;
+	font-family: "open_sansregular";
+	font-size: 1.4em;
+	font-weight: 600;
+	height: 29px;
+	line-height: 30px;
+	margin: 0 0 1px;
+	padding: 0 0 0 10px;
+	float: left;
+	width: 100%;
+}
+#home .panel-panel #mini-panel-most_view_for_home .panel-panel section:nth-of-type(1) h2 {
+background: url("../images/topicicon.png") no-repeat scroll 7px 6px #e5e5e5;
+box-sizing: border-box;
+padding: 0 0 0 32px;
+}
+#home .panel-panel #mini-panel-most_view_for_home .panel-panel section:nth-of-type(2) h2 {
+background: url("../images/formsimg.png") no-repeat scroll 7px 4px #e5e5e5;
+box-sizing: border-box;
+padding: 0 0 0 32px;
+}
+#home .panel-panel #mini-panel-most_view_for_home .panel-panel section:nth-of-type(3) h2 {
+background: url("../images/serviceicon.png") no-repeat scroll 7px 4px #e5e5e5;
+box-sizing: border-box;
+padding: 0 0 0 32px;
+}
+.accordion_body p {
+	padding: 5px;
+	margin: 0px;
+}
+#home .inside .accordion_body {
+	background: none repeat scroll 0 0 #fff;
+	border: 1px solid #ddd;
+	float: left;
+	height: 192px;
+	font-size: 1.3em;
+	margin: -2px 0 0;
+	padding: 16px 8px 11px 0;
+	width: 100%;
+}
+#home .inside .view-display-id-block_7 .accordion_body {
+	border:none;
+	padding:0;
+	/*line-height: 19px;
+	font-size: 1.3em;*/
+	font-family: "open_sansregular";
+}
+#home .panel-col-first .inside #quicktabs-container-_none_ .view-display-id-block_7 .accordion_body {
+	height: 232px;
+    overflow: auto;
+    padding: 0 10px 0 0;
+}
+#home .panel-col-first .view-metadata .view-content ul li {
+	font-size:100%
+}
+.one-column .panel-pane.pane-views h2.pane-title span.plusminus {
+	background:rgb(86,86,86);
+	color: #fff;
+	font-size: 18px;
+	padding: 0;
+	text-align: center;
+	height: 29px;
+	width: 28px;
+	float:right;
+}
+/*accordian css ends*/
+/*slider css Starts*/
+#home .panel-col .inside {
+	margin: 30px 0 0 0;
+}
+.panel-3col .panel-col .inside {
+	float: left;
+	width: 100%;
+	margin: 30px 0 0 2.5%;
+}
+#home .panel-col .inside ul {
+	list-style-type:none; /*margin: 15px 0 3px;*/
+}
+#home .panel-col .inside ul li {
+	background: url("../images/arrow.jpg") no-repeat scroll left 4px rgba(0, 0, 0, 0);
+	display: block;
+	line-height: 19px;
+	margin: 0 0 8px 10px;
+	padding: 0 0 0 19px;
+	width: 90%;
+}
+#home .panel-col-last {
+	float: right;
+	width: 17%;
+	margin: 30px 0 0 2%;
+}
+.panel-3col .panel-col-last .inside {
+	margin: 0 0 0 0;
+}
+#home .panel-col-last .view-featured {
+	margin: 0 0 10px;
+}
+
+#quicktabs-india_at_a_glance_tabs .quicktabs_main.quicktabs-style-basic {
+	background: none repeat scroll 0 0 rgb(249, 249, 249);
+	border-color: #ddd #ddd -moz-use-text-color;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-style: solid solid none;
+	border-width: 1px 1px medium;
+	box-sizing: border-box;
+	clear: both;
+	float: left;
+	margin: 0 0 0;
+	padding: 10px;
+	width: 100%;
+}
+#home .pane-home-main-content .panel-col-first h2, #home .pane-home-main-content .inside .home_heading h2, #home .pane-home-main-content .panel-col-last h2 {
+	/*background: url("../images/miximg.png") no-repeat scroll 55px -117px rgba(0, 0, 0, 0);
+	border-bottom: 3px solid #4f76b1;*/
+	display: table;
+	float: none;
+	font-size: 1.7em;
+	margin: 0 auto;
+	/*width: 147px;*/
+	height:30px;
+}
+#home .pane-home-main-content .panel-col-first h2::after,
+#home .pane-home-main-content .inside .home_heading h2::after,
+#home .pane-home-main-content .panel-col-last h2::after {
+	content:"";
+	display:block;
+	height:8px;
+	width:147px;
+	margin:4px auto 0;
+	border-bottom: 3px solid #4d77b3;
+	background: url("../images/title-arrow.png") no-repeat scroll top center;
+}
+#home #mini-panel-home_main_content .panel-panel .home_heading {
+	border-bottom:3px solid #ddd;
+	float: left;
+	height: 30px;
+	width: 100%;
+	margin: 0 0 23px;
+	text-align: center;
+}
+ul.quicktabs-tabs {
+	float: left;
+	/*margin-top: 9px;*/
+}
+ul.quicktabs-tabs li {
+	background: transparent none repeat scroll 0 0;
+    display: inline-block;
+    list-style-type: none;
+    padding: 2px 0 0;
+    white-space: nowrap;
+	/*background: none repeat scroll 0 0 #ccc;
+	display:inline-block;
+	list-style-type: none;
+	padding: 0;
+	white-space: nowrap;*/
+}
+.panel-3col .panel-separator {
+	margin: 0 0 1px;
+}
+.panel-3col .panel-col {
+	float: left;
+	width: 39%;
+	margin: 0 0 0 2.5%;
+}
+#home .panel-panel #mini-panel-most_view_for_home .panel-panel {
+	width: 100%;
+	margin: 0;
+}
+
+#home .inside .accordion_body {
+	height:auto;
+}
+
+
+/*/Doubt*/
+
+
+
+
+
+
+
+/*Modified CSS from 24-12-2015*/
+
+/*============= Most Searched =============*/
+
+
+#quicktabs-container-_none_ .view-footer, #quicktabs-tabpage-home_news_hindi-0 .view-footer  {
+  bottom: 8px;
+  font-size: 110%;
+  position: absolute;
+  right: 31px;
+  border: 1px solid #5996d9;
+  padding: 3px;
+      z-index: 999999;
+}

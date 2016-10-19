@@ -1,0 +1,300 @@
+/*=============================================================
+    TABLE OF CONTENTS
+    =============================
+    01 - General CSS starts 
+	02 - Useful Elements CSS Starts
+	03 - Top bar CSS starts
+	04 - Header CSS Starts
+	05 - Header Style 2
+	06 - Banner CSS Starts
+	07 - Information Boxes CSS
+	08 - Welcome Message CSS
+	09 - Our Courses CSS
+	10 - Our Teachers CSS
+	11 - Seminar/Events CSS
+	12 - Gallery CSS starts
+	13 - Our Process
+	14 - Testimonials Starts
+	15 - Blog Posts Starts
+	16 - Brands Carousel Starts
+	17 - Call to Action Box
+	18 - Title Section CSS
+	19 - Page Preloader
+	20 - Single-teacher CSS
+	21 - Styles For Inner Pages
+		 21.1 - Contact Us Page
+		 21.2 About Us Page
+		 21.3 - 404 Error Page
+		 21.4 Boxed Page
+		 21.5 Testimonials Page
+		 21.6 - Blog Page
+		 21.7 - Our Staff  CSS
+		 21.8 Courses Pages
+	22 - Sidebars CSS
+	23 - Products Section CSS
+	24 - Pricing-list CSS  Starts
+	25 - Footer
+	26 - Mobile Adjustments Media Queries
+		 26.1 Top Navigation settings
+		 26.2 Footer Settings           
+  =============================================================*/
+
+
+/*-------------------------
+ 01 - General CSS starts
+-------------------------*/
+/*
+body {
+	font-family:'Lato', sans-serif;
+	line-height:25px;
+	font-size:0.875rem;
+	font-weight:400;
+    padding:0;
+    margin:0;
+    font-style:normal;
+	color:#5d5d5d;
+}
+h1, h1 a { 
+	font-size:2rem;
+    margin-bottom:15px;
+}
+h2, h2 a {
+	font-size:1.75rem;
+}
+h3, h3 a { 
+	font-size:1.50rem;
+}
+h4, h4 a { 
+	font-size:1.25rem;
+}
+h5, h6, h5 a, h6 a {
+	font-size:1rem; 
+}
+label, p, ul, ol, a, blockquote, input, textarea, select, [type=date], [type=text], [type=email], span { 
+	font-size:0.875rem;
+	line-height:25px;
+	color:#5d5d5d;
+}
+h1,h2,h3,h4,h5,h6, h2 a, h3 a, h4 a, h5 a, h6 a, h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+	font-family:'Montserrat', sans-serif;
+	font-weight:bold;
+	color:#2f2f2f;
+}
+*/
+/*
+a:hover {
+	color:#e79800; 
+}
+*/
+iframe {
+	width:100%;
+	border:0px; 
+}
+.button {
+	text-transform:uppercase;
+	font-weight:bold;
+	font-family:'Montserrat', sans-serif;
+}
+.button.primary {
+	background-color:#174873; 
+}
+.button.primary:hover {
+	background-color:#e79800; 
+}
+.button.secondary {
+	background-color:#e79800; 
+}
+.button.secondary:hover {
+	background-color:#174873; 
+}
+.bordered-light {
+	background-color:transparent !important;
+	border:1px solid #FFF; 
+}
+.bordered-light:hover {
+	background-color:#e79800 !important;
+	border-color:#e79800 !important;	 
+}
+.bordered-dark {
+	background-color:transparent !important;
+	border:1px solid #2f2f2f !important; 
+	color:#2f2f2f !important;
+}
+.bordered-dark:hover {
+	background-color:#2f2f2f !important;
+	border-color:#2f2f2f !important;
+	color:#FFF !important;	 
+}
+.module {
+	position:relative;
+	margin-bottom:80px; 
+}
+dl dt {
+	font-weight:bold;
+	margin-bottom:.3rem;
+}
+iframe {
+	width:100%;
+}
+/*-------------------------
+General CSS Ends
+-------------------------*/
+
+/*-------------------------
+ 02 - Useful Elements CSS
+-------------------------*/
+.section-title-wrapper {
+	position:relative; 
+	margin-bottom:40px;
+}
+.section-title { 
+	overflow:hidden;
+    position:relative;
+    text-align:center;
+}
+.section-title h2 {
+	margin-bottom:0px;
+    text-transform:uppercase; 
+	font-weight:bold !important;
+}
+.section-title p {
+	font-size:1rem;
+    text-transform:capitalize;
+	margin-bottom:20px; 
+}
+.section-title-wrapper::after {
+    bottom:-6px;
+    color:rgb(231, 152, 0);
+    content:"";
+    font-family:fontawesome;
+    font-size:14px;
+    height:17px;
+    left:0px;
+    position:absolute;
+    right:0px;
+    text-align:center;
+    width:39px;
+    z-index:9;
+    background:none 0px 0px repeat scroll rgb(255, 255, 255);
+    margin:0px auto;
+}
+.section-title-wrapper:before {
+    background:#e79800 none repeat scroll 0 0;
+    bottom:0;
+    content:"";
+    height:1px;
+    left:0;
+    margin:0 auto;
+    position:absolute;
+    right:0;
+    text-align:center;
+    width:109px;
+}
+.section-title-wrapper.light-title h2, .section-title-wrapper.light-title p {
+	color:#FFF; 
+}
+.section-title-wrapper.light-title:before {
+	background-color:#FFF;	
+}
+.section-title-wrapper.light-title::after {
+	background-color:#353536;	 
+	color:#FFF;
+}
+.grey-bg .section-title-wrapper::after {
+	background:none 0px 0px repeat scroll rgb(247, 247, 247); 
+}
+.owl-nav {
+	text-align:center;
+	margin:auto; 
+	width:90px;
+	margin-top:15px;
+}
+.owl-nav .owl-prev, .owl-nav .owl-next {
+	display:block;
+	width:35px;
+	height:35px;
+	border:1px solid #e79800;
+	text-align:center;
+	display:inlne-block;
+	float:left;
+	margin-left:5px;
+	margin-right:5px;
+	background-color:#FFF;
+	color:#e79800;
+}
+.owl-nav .owl-prev i, .owl-nav .owl-next i {
+	line-height:25px; 
+	font-size:1.2rem;
+	margin-top:-1px;
+}
+.owl-nav .owl-prev:hover, .owl-nav .owl-next:hover {
+	background-color:#e79800;
+	color:#FFF;		 
+}
+.space-section .row .small-12 {
+	margin-top:15px;
+	margin-bottom:15px; 
+}
+.space-section .row .small-12:last-child { 
+	margin-bottom:0px;
+}
+.space-section .row .small-12:first-child {
+	margin-top:0px; 
+}
+.space-section .row .medium-6:nth-child(2) {
+	margin-top:0px; 
+}
+.space-section .row .medium-4:nth-child(2), .space-section .row .medium-4:nth-child(3) { 
+	margin-top:0px;
+}
+.row .sidebar.small-12 {
+	margin-top:0px; 
+}
+/*-------------------------
+Useful Elements CSS Ends
+-------------------------*/
+
+/*-------------------------
+ 03 - Top bar CSS starts
+-------------------------*/
+.topBar {
+	background-color:#174873;
+	width:100%; 
+	border-bottom:1px solid #ededed;
+}
+.topBar p {
+	color:#FFF;
+	margin-bottom:0px; 
+	float:left;
+	padding:7px;
+}
+.topBar ul {
+	text-align:right; 
+}
+.topBar ul li {
+	color:#FFF;
+	padding:7px;
+	text-align:right;
+	display:inline-block;
+}
+.topBar ul .social {
+	padding:0px; 
+}
+.topBar ul .first-social {
+	padding-left:25px; 
+}
+.topBar ul li a {
+	padding-left:5px;
+	padding-right:5px;
+	color:#FFF; 
+}
+.topBar ul li a:hover {
+	color:#e79800; 
+}
+/*-------------------------
+Top bar CSS Ends
+-------------------------*/
+
+/*-------------------------
+ 04 - Header CSS Starts
+-------------------------*/

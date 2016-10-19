@@ -1,0 +1,21 @@
+/* MDNW RESET - A COMBINATION OF RESET, NORMALIZE, FOUNDATION, & OTHERS */
+
+/* RESET & NORMALIZE HTML ELEMENGS */
+/* 1REM = 10px */
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+.dank{font-size:62.5%;line-height: 1.625;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;overflow-y:scroll;} 
+body{background:white;color:#222;padding:0;margin:0;position:relative;cursor:default}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
+article,aside,details,figcaption,figure,footer,header,main,nav,section{display:block}
+table{border-collapse:separate;border-spacing:0}
+caption,th,td{font-weight:normal;text-align:left}
+blockquote:before,blockquote:after,q:before,q:after{content:""}
+blockquote,q{quotes:"" ""}
+a{text-decoration: none;}
+a:hover,a:active{outline:0,cursor:pointer;color:#107acb}
+a,a:visited{color:#0992e5;text-decoration:none;line-height:inherit}
+a:focus{outline:none}
+a img{border:0}
+hr{
+  	}
+/* WP ELEMENT RULES */

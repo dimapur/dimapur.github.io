@@ -1,0 +1,30 @@
+/** 
+* 
+* This file will govern the typography aspects of the theme.
+*
+**/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,800);
+
+
+/* DEFAULTS */
+body{}
+p{color: #414345;}
+
+body,
+button,.button,input,
+h2,h3,h4,h5,h6,
+nav ul.menu{
+	font-weight: 300;
+	font-size: 1.40rem;
+    color: inherit;
+	}
+.blck{
+    font-size: 0.7em;
+}
+	
+body, nav ul.menu, p{
+	font-family: 'Raleway',"Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+}
+

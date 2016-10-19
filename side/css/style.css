@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+.headers1 {
+  box-shadow: 0px 5px 5px #999999;
+  height: 100px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .mobile-nav-wrap {
+    /* display: none; */
+  }
+}
+
+.mobile-header-nav {
+  background-color: #222222;
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+}
+.mobile-header-nav li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.mobile-header-nav li a {
+  color: white;
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.mobile-header-nav li a:hover {
+  background-color: brown;
+}
+
+.hamburger-menu {
+  display: inline-block;
+  height: 100px;
+  padding: 35px 25px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger-menu:hover {
+  cursor: pointer;
+}
+.hamburger-menu .menu-item {
+  background: black;
+  display: block;
+  height: 3px;
+  margin: 0 0 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 40px;
+}
+.hamburger-menu.open .menu-item {
+  margin: 0 0 5px;
+}
+.hamburger-menu.open .menu-item:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 10px;
+          transform-origin: 10px;
+}
+.hamburger-menu.open .menu-item:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-menu.open .menu-item:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 8px;
+          transform-origin: 8px;
+}
+
+.has-submenu {
+  overflow: hidden;
+  position: relative;
+}
+.has-submenu:after {
+  color: white;
+  content: "+";
+  font-size: 24px;
+  position: absolute;
+  right: 70%;
+  top: 11px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.has-submenu.open:after {
+  content: "-";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.has-submenu .submenu {
+  list-style: none;
+  max-height: 0;
+  padding: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.has-submenu .submenu.open {
+  max-height: 999px;
+}
+
+.submenu li {
+  height: 20px;
+}
